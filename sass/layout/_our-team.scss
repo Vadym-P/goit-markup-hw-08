@@ -1,42 +1,17 @@
 .team {
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
+  padding-top: var(--mob-tab-section-pt);
+  padding-bottom: var(--mob-tab-section-pb);
   background: var(--background);
 }
 
-.team-list {
-  display: flex;
-  align-items: center;
-  margin-left: -30px;
-  margin-top: -30px;
-
-  &__item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-    box-shadow: 0px 1px 3px hsla(0, 0%, 0%, 0.12),
-      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
-    &_desc {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.9;
-      letter-spacing: 0.03em;
-      text-align: center;
-      color: var(--content-description);
-      margin-bottom: 16px;
-    }
-  }
-}
-
-.description-card {
-  padding: 30px 35px;
-  background-color: var(--white-color);
+.team-list__item {
+  box-shadow: 0px 1px 3px hsla(0, 0%, 0%, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .third-title {
+  font-family: var(--main-font);
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -44,4 +19,68 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: var(--main-color);
+}
+
+.description-card {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__item_desc {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--content-description);
+  margin-bottom: 16px;
+}
+
+.team-list__img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+
+    &__item {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: var(--section-pt);
+    padding-bottom: var(--section-pb);
+  }
+
+  .team-list {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+
+    &__item {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
 }

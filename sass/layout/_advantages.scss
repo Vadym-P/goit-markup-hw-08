@@ -1,6 +1,6 @@
 .advantages {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--mob-tab-section-pt);
+  padding-bottom: var(--mob-tab-section-pb);
 
   &-icon {
     display: flex;

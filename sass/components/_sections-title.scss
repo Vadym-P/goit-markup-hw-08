@@ -1,8 +1,20 @@
 .second-title {
+  font-family: var(--main-font);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: var(--second-title-mb);
+  margin-bottom: var(--mobile-second-title-mb);
+}
+
+@media screen and (min-width: 1200px) {
+  .second-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: var(--second-title-mb);
+  }
 }
