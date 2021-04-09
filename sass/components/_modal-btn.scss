@@ -1,0 +1,31 @@
+.modal-btn {
+  min-width: 200px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  display: block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-btn {
+    transition: background-color var(--transition-time-cubic),
+      box-shadow var(--transition-time-cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--background-btn-hover);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+  }
+}

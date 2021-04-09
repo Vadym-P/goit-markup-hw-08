@@ -1,0 +1,38 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+  animation-duration: 2000ms;
+
+  &__accent-text {
+    color: var(--accent-color);
+  }
+
+  &_theme-dark {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-header .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header .logo {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+  }
+
+  .animate__rubberBand {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
