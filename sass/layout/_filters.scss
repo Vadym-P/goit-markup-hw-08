@@ -1,42 +1,75 @@
 .filter {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
 
-  &-menu {
-    padding-top: var(--section-pt);
-    padding-bottom: var(--section-pb);
+.filter-menu {
+  padding-top: var(--mob-tab-section-pt);
+  padding-bottom: var(--mob-tab-section-pb);
+}
+
+.filter__btn {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: var(--background);
+  padding: var(--filters-btn-pd);
+  transition: background-color var(--transition-time-cubic),
+    color var(--transition-time-cubic), box-shadow var(--transition-time-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
-  &__item {
+  &.current {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+  .filter__item {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .filter__item {
     &:not(:last-child) {
       margin-right: 8px;
     }
   }
+}
 
-  &__btn {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    background: var(--background);
-    padding: var(--filters-btn-pd);
-    transition: background-color var(--transition-time-cubic),
-      color var(--transition-time-cubic),
-      box-shadow var(--transition-time-cubic);
+@media screen and (min-width: 1200px) {
+}
+.filter {
+  margin-bottom: 50px;
+}
 
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-      color: var(--white-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
-  }
+.filter-menu {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
 }
