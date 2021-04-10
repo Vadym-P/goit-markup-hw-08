@@ -12,7 +12,8 @@
   }
 
   &_theme-dark {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
     color: var(--white-color);
   }
@@ -34,5 +35,10 @@
   .animate__rubberBand {
     padding-top: 24px;
     padding-bottom: 25px;
+  }
+
+  .logo_theme-dark {
+    display: flex;
+    justify-content: start;
   }
 }
