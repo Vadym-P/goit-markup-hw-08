@@ -114,6 +114,7 @@
 
 .modal-form__check-desc {
   display: flex;
+  align-items: center;
   margin: 0 auto;
   font-family: var(--main-font);
   font-weight: 400;
@@ -143,6 +144,42 @@
 
     .modal-form__term:focus + & {
       box-shadow: 0 0 0 1px var(--black-color);
+    }
+  }
+}
+
+@media screen and (min-width: 315px) and (max-width: 398px) {
+  .modal-form__check-desc {
+    font-size: 7px;
+    letter-spacing: 0.01em;
+
+    &::before {
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 399px) and (max-width: 434px) {
+  .modal-form__check-desc {
+    font-size: 10px;
+    letter-spacing: 0.01em;
+
+    &::before {
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
+
+@media screen and (min-width: 435px) and (max-width: 470px) {
+  .modal-form__check-desc {
+    font-size: 11px;
+    letter-spacing: 0.02em;
+
+    &::before {
+      width: 15px;
+      height: 15px;
     }
   }
 }
