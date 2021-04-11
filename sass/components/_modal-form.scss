@@ -148,7 +148,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .modal-form__field:focus {
+  .modal-form__field:focus-within {
     color: var(--accent-color);
   }
 }

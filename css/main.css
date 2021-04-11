@@ -145,6 +145,7 @@ img {
   .animate__rubberBand {
     padding-top: 24px;
     padding-bottom: 25px;
+    animation-duration: 2000ms;
   }
   .logo_theme-dark {
     display: flex;
@@ -565,7 +566,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .modal-form__field:focus {
+  .modal-form__field:focus-within {
     color: var(--accent-color);
   }
 }
