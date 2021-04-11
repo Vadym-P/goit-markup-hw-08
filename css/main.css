@@ -149,6 +149,9 @@ img {
   .logo_theme-dark {
     display: flex;
     justify-content: start;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -779,9 +782,13 @@ img {
     color: var(--accent-color);
   }
   .contacts__icon_phone {
+    width: 10px;
+    height: 16px;
     margin-right: 10px;
   }
   .contacts__icon_mail {
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
   }
 }
