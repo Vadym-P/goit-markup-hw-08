@@ -64,12 +64,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-}
-.filter {
-  margin-bottom: 50px;
-}
+  .filter {
+    margin-bottom: 50px;
+  }
 
-.filter-menu {
-  padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
+  .filter-menu {
+    padding-top: var(--section-pt);
+    padding-bottom: var(--section-pb);
+  }
 }
