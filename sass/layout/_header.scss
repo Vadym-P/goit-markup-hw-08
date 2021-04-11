@@ -190,6 +190,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--content-description);
+    transition: color var(--transition-time-cubic);
 
     &:hover,
     &:focus {
@@ -243,12 +244,6 @@
     letter-spacing: 0.02em;
     padding-top: var(--link-padding-tp);
     padding-bottom: var(--link-padding-bt);
-    transition: color var(--transition-time-cubic);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
   }
 
   .contacts__icon_phone {
