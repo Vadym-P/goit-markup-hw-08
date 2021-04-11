@@ -44,6 +44,7 @@
 @media screen and (min-width: 768px) {
   .contacts__container {
     display: flex;
+    align-items: baseline;
   }
 
   .contact-details {
