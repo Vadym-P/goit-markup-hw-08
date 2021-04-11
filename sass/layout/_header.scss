@@ -190,6 +190,11 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--content-description);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 
   .contacts__item {
