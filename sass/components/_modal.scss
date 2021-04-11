@@ -3,7 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg) scale(1);
-  width: 450px;
+  width: 95%;
+  max-width: 450px;
   height: 609px;
   background-color: var(--white-color);
   padding: 40px;
@@ -43,6 +44,12 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
