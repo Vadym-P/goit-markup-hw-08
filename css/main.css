@@ -650,7 +650,6 @@ img {
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
   z-index: 100;
   background-color: var(--white-color);
@@ -923,6 +922,7 @@ img {
     line-height: 1.36;
   }
   .hero {
+    min-width: 1600px;
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/hero-desktop_1x.jpg");
   }
